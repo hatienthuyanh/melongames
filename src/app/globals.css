@@ -1,0 +1,26 @@
+:root {
+  --pink: #ff4d70;
+  --teal: #00bdb6;
+  --bg: #f0fffe;
+  --bg-alt: #d1f9f1;
+  --text: #0c3633;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}

@@ -1,0 +1,264 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.melonLogo {
+  font-size: 80px;
+  margin-bottom: 20px;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.gameTitle {
+  font-size: 2rem;
+  color: #0c3633;
+  margin-bottom: 15px;
+}
+
+.instructions {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.keys {
+  display: inline-flex;
+  gap: 4px;
+  background: #f0fffe;
+  padding: 4px 8px;
+  border-radius: 8px;
+  border: 2px solid #00bdb6;
+}
+
+.rules {
+  background: #f0fffe;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.rules p {
+  font-size: 1rem;
+  margin: 8px 0;
+  color: #0c3633;
+}
+
+.playButton {
+  background: linear-gradient(135deg, #ff4d70, #ff6b8a);
+  color: white;
+  border: none;
+  padding: 16px 48px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 4px 15px rgba(255, 77, 112, 0.4);
+}
+
+.playButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 77, 112, 0.5);
+}
+
+.menuButton {
+  background: #00bdb6;
+  color: white;
+  border: none;
+  padding: 12px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.menuButton:hover {
+  background: #00a8a3;
+}
+
+.highScore {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #00bdb6;
+  font-weight: 600;
+}
+
+.gameArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hud {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 15px;
+  background: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.canvas {
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  border: 4px solid #00bdb6;
+}
+
+.wordPopup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 30px 50px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 10;
+  animation: popIn 0.3s ease;
+}
+
+@keyframes popIn {
+  0% { transform: translate(-50%, -50%) scale(0.5); opacity: 0; }
+  100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+}
+
+.wordLabel {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.wordText {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ff4d70;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.controls {
+  margin-top: 15px;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.gameOver {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.gameOverContent {
+  background: white;
+  padding: 50px;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  max-width: 400px;
+}
+
+.gameOverContent h2 {
+  font-size: 2rem;
+  color: #0c3633;
+  margin-bottom: 20px;
+}
+
+.finalScore {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.levelReached {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.newHighScore {
+  font-size: 1.3rem;
+  color: #00bdb6;
+  font-weight: 700;
+  margin-bottom: 20px;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.footer {
+  margin-top: auto;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .menu {
+    padding: 30px 20px;
+  }
+  
+  .canvas {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .hud {
+    gap: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
