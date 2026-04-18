@@ -110,6 +110,42 @@ export default function Home() {
         </Link>
       </div>
 
+      {/* Sunday Practice */}
+      <Link href="/sunday-practice" style={{
+        textDecoration: 'none',
+        background: 'white',
+        borderRadius: 20,
+        padding: '24px 30px',
+        boxShadow: '0 6px 24px rgba(0,0,0,0.1)',
+        transition: 'transform 0.3s, box-shadow 0.3s',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        maxWidth: 400,
+        width: '100%',
+        border: `3px solid ${COLORS.teal}`,
+      }}>
+        <span style={{ fontSize: 50 }}>🎮</span>
+        <h2 style={{
+          margin: '10px 0 5px',
+          color: COLORS.teal,
+          fontFamily: 'Montserrat, sans-serif',
+        }}>Sunday Practice</h2>
+        <p style={{ color: '#666', fontSize: '0.95rem', textAlign: 'center' }}>
+          Play Wordwall games! Learn letters A–K 🎯
+        </p>
+        <span style={{
+          marginTop: 12,
+          background: `linear-gradient(135deg, ${COLORS.teal}, #00d9d1)`,
+          color: 'white',
+          padding: '10px 30px',
+          borderRadius: 50,
+          fontWeight: 700,
+          fontFamily: 'Montserrat, sans-serif',
+          fontSize: '1rem',
+        }}>▶ Play Now</span>
+      </Link>
+
       <footer style={{ marginTop: 40, color: '#999', fontSize: '0.85rem' }}>
         Made with 💖 by <span style={{ color: COLORS.pink }}>WatermelonEdu</span>
       </footer>
